@@ -13,17 +13,17 @@ Resource  ../resources/pageObject/loginPage.resource
 *** Test Cases ***
 Site is Reachable  
     [Documentation]  It checks if it is possible to navigate to www.saucedemo.com
-    Open Browser  https://${URL}  ${BROWSER} 
+    Open Browser and go to Home page 
     Location Should Be  https://${URL}/
     Check login form Is Present 
 
 Check redirect from http to https
     [Documentation]  It checks if it is possible to navigate to www.saucedemo.com
-    Open Browser  http://${URL}/  ${BROWSER} 
+    Open Browser and go to Home page 
     Location Should Be  https://${URL}/
     Check login form Is Present 
 
 This should be failed
     [Documentation]  It checks if it is possible to navigate to www.saucedemo.com
-    Open Browser  http://${URL}/  ${BROWSER} 
+    Open Browser and go to Home page 
     Location Should Be  https://www.libero.it
