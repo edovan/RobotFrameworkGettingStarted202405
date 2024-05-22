@@ -4,6 +4,8 @@ Documentation  Rappresentazione della pagina di lista prodotti
 *** Variables ***
 ${pageTitle}    Products  
 
+${pageSecondaryTitle}  xpath://div[@id='contents_wrapper']//div[@class='header_secondary_container']/span[@data-test='title']
+
 ${mainPageContainer_loc}  id:inventory_container
 ${productListContainer_loc}  //div[@id='contents_wrapper']//div[@data-test='inventory-container']
 ${productList_loc}  xpath://div[@id='contents_wrapper']//div[@data-test='inventory-container']//div[@data-test='inventory-list']

@@ -25,7 +25,6 @@ Test Teardown   Run Keywords
 Suite Teardown   Close All Browsers
 
 *** Variables ***
-${pageSecondaryTitle}  xpath://div[@id='contents_wrapper']//div[@class='header_secondary_container']/span[@data-test='title']
 
 *** Test Cases ***
 
